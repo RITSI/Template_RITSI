@@ -33,6 +33,14 @@ Para configurar las Github Actions, debes tener en cuenta que se van a utilizar 
 - `TELEGRAM_TO`: ID de Telegram del usuario, canal o grupo al que se enviarán los mensajes. En la organización de RITSI está configurada como variable global, pero hay que habilitarla para el repositorio en cuestión. Cabe matizar que está puesto el identificador del canal de la Comisión.
 - `TELEGRAM_TO_GROUP`: ID de Telegram del grupo al que se enviarán los mensajes. Esta variable se tiene que configurar en el repositorio en cuestión. Cabe matizar que se refiere al grupo de trabajo del repositorio en cuestión.
 
+### Github Pages
+
+Las Github Pages se tienen que configurar para que se desplieguen mediante las Github Actions. Para ello, hay que ir a la sección de `Settings` del repositorio, y en la sección de `Github Pages` seleccionar la opción de construir el sitio desde las Github Actions:
+
+<div class="center">
+    <img src="docs/images/gh_pages_config.png" alt="Github Pages config" width="500px">
+</div>
+
 ### Templates de issues
 
 Las templates de las _issues_ se tendrán que revisar y configurar por cada repositorio para que se ajusten a las necesidades del mismo. Entre las necesidades más básicas podría estar el lengüaje de programación que se va a utilizar. 
