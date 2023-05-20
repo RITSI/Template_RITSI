@@ -1,0 +1,49 @@
+# mkdocs.yml - https://realpython.com/python-project-documentation-with-mkdocs
+# Colors - https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+site_name: Template RITSI - Documentación
+theme:
+  name: material
+  features:
+    - content.code.annotate
+  palette:
+    primary: red
+    accent: red
+  font:
+    text: Exo 2
+    code: Hack
+  language: es
+  favicon: images/1710_Isotipo_Degradado.png
+  logo: images/1710_Isotipo_Blanco.png
+
+plugins: 
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: false
+            show_root_heading: true
+            heading_level: 2
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: 
+        true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+      toc_depth: 8
+      baselevel: 2
+  - tables
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+nav:
+  - Home: index.md
+
+extra: 
+  generator: false
