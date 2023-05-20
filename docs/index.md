@@ -39,7 +39,7 @@ Las Github Pages se tienen que configurar para que se desplieguen mediante las G
 
 <!-- Imagen centrada -->
 <p align="center">
-  <img src="docs/images/gh_pages_config.png" alt="Github Pages" width="500"/>
+  <img src="images/gh_pages_config.png" alt="Github Pages" width="500"/>
 </p>
 
 ### MkDocs
