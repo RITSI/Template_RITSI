@@ -1,0 +1,64 @@
+name: Dudas
+description: Obtén ayuda con el bot
+title: "[DUDA]"
+labels: ["question"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hola, ¿tienes alguna duda? Estaré encantado de ayudarte. Por favor, asegúrate de que no se haya abierto ya una pregunta similar.
+
+  - type: textarea
+    id: issue-faced
+    attributes:
+      label: "Problema que estás teniendo"
+      description: "Describe el problema que estás teniendo. Por favor, sé lo más específico posible."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: traceback
+    attributes:
+      label: "Trazas de error"
+      description: "Si hay algún error, pégalo aquí. Se formateará automáticamente en código (python), por lo que no es necesario que uses comillas invertidas."
+      placeholder: |
+        Traceback (most recent call last):
+          File "/home/bot.py", line 1, in main
+            foo = bar()
+          ...
+        telegram.error.BadRequest: Traceback not found
+      render: Python
+        
+  - type: textarea
+    id: related-code
+    attributes:
+      label: "Código relacionado"
+      description: "Si el problema está relacionado con el código, pégalo aquí. Se formateará automáticamente en código (python), por lo que no es necesario que uses comillas invertidas."
+      placeholder: |
+        logging.basicConfig(
+            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+        )
+
+        logger = logging.getLogger(__name__)
+      render: Python
+
+  - type: markdown
+    attributes:
+      value: "### Configuración"
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Sistema operativo
+    validations: 
+      required: true
+      
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versión de Python, python-telegram-bot y del resto de dependencias
+      description: Pega la salida del comando `$ python -m telegram`. Esto se formateará automáticamente en código, por lo que no es necesario que uses comillas invertidas.
+      render: Shell
+    validations: 
+      required: true
