@@ -4,7 +4,7 @@ Repositorio plantilla para nuevos proyectos y repositorios RITSI.
 
 Utiliza este repositorio como plantilla para crear nuevos repositorios RITSI con la estructura y configuración básica, o bien, para realizar tus propios proyectos aprovechando las Github Actions que tenemos configuradas!
 
-Podemos encontrar la documentación de muestra de este repositorio en [este enlace](https://ritsi.github.io/Template-RITSI/)
+Podemos encontrar la documentación de muestra de este repositorio en [este enlace](https://ritsi.github.io/Template_RITSI/)
 
 ## Estructura
 
