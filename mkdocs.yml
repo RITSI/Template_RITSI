@@ -1,6 +1,6 @@
 # mkdocs.yml - https://realpython.com/python-project-documentation-with-mkdocs
 # Colors - https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
-site_name: Template for Telegram Bots - Documentation
+site_name: Template RITSI - Documentación
 theme:
   name: material
   features:
@@ -12,8 +12,8 @@ theme:
     text: Exo 2
     code: Hack
   language: es
-  favicon: assets/icon.png
-  logo: assets/icon.png
+  favicon: images/1710_Isotipo_Degradado.png
+  logo: images/1710_Isotipo_Blanco.png
 
 plugins: 
   - mkdocstrings:
@@ -44,9 +44,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Code:
-    - Main: botsi_main.md
-  - Utils: utils.md
 
 extra: 
   generator: false
