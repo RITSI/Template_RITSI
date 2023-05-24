@@ -1,5 +1,5 @@
 name: Feature Request
-description: Sugiérenos una nueva característica para el bot
+description: Sugiérenos una nueva característica para ESTE PROYECTO
 title: "[FEATURE]"
 labels: ["enhancement"]
 
@@ -9,7 +9,7 @@ body:
     attributes:
       label: "Qué tipo de característica te gustaría que se añadiera? ¿Qué problema quieres resolver?"
       description: "Una descripción clara y concisa de lo que te gustaría que sucediera."
-      placeholder: "Ejemplo: Me gustaría que el bot pudiera hacer X porque no hay ninguna forma de hacerlo."
+      placeholder: "Ejemplo: Me gustaría que ESTE PROYECTO pudiera hacer X porque no hay ninguna forma de hacerlo."
     validations:
       required: true
       

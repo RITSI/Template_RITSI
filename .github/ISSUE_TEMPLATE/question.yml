@@ -1,5 +1,5 @@
 name: Dudas
-description: Obtén ayuda con el bot
+description: Obtén ayuda con ESTE PROYECTO
 title: "[DUDA]"
 labels: ["question"]
 
@@ -21,27 +21,19 @@ body:
     id: traceback
     attributes:
       label: "Trazas de error"
-      description: "Si hay algún error, pégalo aquí. Se formateará automáticamente en código (python), por lo que no es necesario que uses comillas invertidas."
+      description: "Si hay algún error, pégalo aquí. Se formateará automáticamente en código (LENGUAJE_UTILIZADO), por lo que no es necesario que uses comillas invertidas."
       placeholder: |
-        Traceback (most recent call last):
-          File "/home/bot.py", line 1, in main
-            foo = bar()
-          ...
-        telegram.error.BadRequest: Traceback not found
-      render: Python
+        Traceback
+      render: Shell
         
   - type: textarea
     id: related-code
     attributes:
       label: "Código relacionado"
-      description: "Si el problema está relacionado con el código, pégalo aquí. Se formateará automáticamente en código (python), por lo que no es necesario que uses comillas invertidas."
+      description: "Si el problema está relacionado con el código, pégalo aquí. Se formateará automáticamente en código (LENGUAJE_UTILIZADO), por lo que no es necesario que uses comillas invertidas."
       placeholder: |
-        logging.basicConfig(
-            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
-        )
-
-        logger = logging.getLogger(__name__)
-      render: Python
+        LOGS
+      render: LENGUAJE_UTILIZADO
 
   - type: markdown
     attributes:
@@ -57,8 +49,8 @@ body:
   - type: textarea
     id: versions
     attributes:
-      label: Versión de Python, python-telegram-bot y del resto de dependencias
-      description: Pega la salida del comando `$ python -m telegram`. Esto se formateará automáticamente en código, por lo que no es necesario que uses comillas invertidas.
+      label: Versión de LENGUAJE_UTILIZADO y del resto de dependencias
+      description: Pega la salida del comando `$ LENGUAJE_UTILIZADO -v`. Esto se formateará automáticamente en código, por lo que no es necesario que uses comillas invertidas.
       render: Shell
     validations: 
       required: true

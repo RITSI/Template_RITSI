@@ -1,5 +1,5 @@
 name: Reporte de bugs
-description: Reporta un bug para ayudar a mejorar el bot
+description: Reporta un bug para ayudar a mejorar ESTE PROYECTO
 title: "[BUG]"
 labels: ["bug :bug:"]
 
@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Gracias por reportar problemas en BOTSI!
+        Gracias por reportar problemas en ESTE PROYECTO!
         
         Por favor, rellena la siguiente plantilla para ayudarnos a identificar y resolver el problema.
 
@@ -54,8 +54,8 @@ body:
   - type: textarea
     id: versions
     attributes:
-      label: Versión de Python y de los paquetes
-      description: Copia la salida del comando `$ python -m telegram` y pégala aquí. Se formateará automáticamente en código, por lo que no es necesario que uses comillas invertidas.
+      label: Versión de LO_QUE_SE_USE y de los paquetes
+      description: Copia la salida del comando `$ LO_QUE_SE_USE -v` y pégala aquí. Se formateará automáticamente en código, por lo que no es necesario que uses comillas invertidas.
       render: Shell
     validations: 
       required: true
@@ -64,8 +64,8 @@ body:
     id: logs
     attributes:
       label: Logs
-      description: Copia los logs del bot y pégalos aquí. Se formateará automáticamente en código, por lo que no es necesario que uses comillas invertidas.
-      render: Python
+      description: Copia los logs de ESTE PROYECTO y pégalos aquí. Se formateará automáticamente en código, por lo que no es necesario que uses comillas invertidas.
+      render: Shell
 
   - type: textarea
     id: additional-context
